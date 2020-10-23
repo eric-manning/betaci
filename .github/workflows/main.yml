@@ -9,7 +9,7 @@ jobs:
     - name: Compilation
       uses: vinay0410/tectonic-action@master
       env:
-          GITHUB_TOKEN: 0ecda6010aa70f4a104ac8b5395a5fe9df71e20d
+          GITHUB_TOKEN: ${{ secrets.0ecda6010aa70f4a104ac8b5395a5fe9df71e20d }}
       with:
         tex_path: '.github/workflows/test.tex'
         push: 'yes'
