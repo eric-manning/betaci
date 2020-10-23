@@ -18,10 +18,10 @@ jobs:
       - uses: docker://pandoc/core:2.9
         with:
           args: >-
-            -s comutation-manuscript.tex 
+            -s test.tex 
             -f latex 
             -t docx 
-            -o output/comutation-manuscript.docx 
+            -o output/test.docx 
             --bibliography reference_files/references.bib 
             --bibliography reference_files/R_citations.bib 
             --bibliography reference_files/additional_citations.bib 
