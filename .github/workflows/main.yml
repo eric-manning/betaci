@@ -18,10 +18,7 @@ jobs:
       - uses: docker://pandoc/core:2.9
         with:
           args: >-
-            -s beta.tex 
-            -f latex 
-            -t pdf 
-            -o output/beta.pdf 
+            pdflatex beta.tex 
       - uses: actions/upload-artifact@master
         with:
           name: beta
