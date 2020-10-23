@@ -7,11 +7,11 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v2
       - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v2
+        uses: xu-cheng/latex-action@master
         with:
           root_file: .github/workflows/test.tex
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@master
         with:
-          name: test-artifact
-          path: .github/workflows/test.pdf
+          name: manuscript
+          path: output
 
