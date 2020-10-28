@@ -10,9 +10,5 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: beta.tex
-      - name: Upload document
-        uses: actions/upload-artifact@v2
-        with:
-          name: PDF
-          path: beta.pdf
+
 
