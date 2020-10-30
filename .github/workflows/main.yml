@@ -15,7 +15,7 @@ jobs:
           git config --global user.email "eric.welch@wallawalla.edu"
           git config --global user.name "eric-manning"
           git add beta.pdf
-          git commit -m "$(date)"
+          git commit -m "Last updated at $(date)"
           git push
             
 
