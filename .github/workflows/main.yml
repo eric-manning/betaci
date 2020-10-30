@@ -22,6 +22,8 @@ jobs:
           name: PDF
       - name: Display structure of downloaded files
         run: |
+          git config --global user.email "eric.welch@wallawalla.edu"
+          git config --global user.name "eric-manning"
           git commit
           git push
             
