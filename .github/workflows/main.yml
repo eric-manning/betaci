@@ -21,6 +21,8 @@ jobs:
         with:
           name: PDF
       - name: Display structure of downloaded files
-        run: ls -R
-
+        run: |
+          git commit
+          git push
+            
 
