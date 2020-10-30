@@ -10,22 +10,12 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: beta.tex
-      - uses: actions/upload-artifact@v2
-        with:
-          name: PDF
-          path: beta.pdf
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Download 
-        uses: actions/download-artifact@v2
-        with:
-          name: PDF
       - name: Display structure of downloaded files
         run: |
           git config --global user.email "eric.welch@wallawalla.edu"
           git config --global user.name "eric-manning"
           git add beta.pdf
-          git commit -m "now we have a message"
+          git commit -m "$(date)"
           git push
             
 
