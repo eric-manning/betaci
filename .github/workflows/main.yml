@@ -10,6 +10,7 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: beta.tex
+          latexmk_use_xelatex: true
       - name: Display structure of downloaded files
         run: |
           git config --global user.email "eric.welch@wallawalla.edu"
