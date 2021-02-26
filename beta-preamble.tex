@@ -17,9 +17,9 @@
 
 %\usepackage{tgbonum}
 %\usepackage{bera}
-%\usepackage[bitstream-charter]{mathdesign}
-%\usepackage[T1]{fontenc}
-\usepackage{baskervald}
+\usepackage[bitstream-charter]{mathdesign}
+\usepackage[T1]{fontenc}
+%\usepackage{baskervald}
 %\usepackage[T1]{fontenc}
 %\usepackage{CormorantGaramond}
 
@@ -85,6 +85,7 @@
 
 \def\title[#1]{
     \newpage
+    \vspace*{-0.5cm}
     \ifhmode\par\fi
     \removelastskip
     \vskip 1ex\goodbreak
@@ -302,39 +303,22 @@
 
 \fancyhead[R]{Bylaws}
 
+\renewcommand*\contentsname{Table of Contents}
+
 \begin{document}
 
 \nolinenumbers
 \begin{titlepage}
     \begin{center}
-        \vspace*{1cm}
- 
-        \textbf{Thesis Title}
- 
-        \vspace{0.5cm}
-         Thesis Subtitle
-             
-        \vspace{1.5cm}
- 
-        \textbf{Author Name}
- 
+        \vspace*{5cm}
+  		\includegraphics[width=0.65\textwidth]{Logo_ASWWU-Black}\\
+        \LARGE Governing Documents\\ \Huge \textbf{Bylaws}
         \vfill
-             
-        A thesis presented for the degree of\\
-        Doctor of Philosophy
-             
-        \vspace{0.8cm}
-      
-        \includegraphics[width=0.4\textwidth]{Logo_ASWWU-Black}
-             
-        Department Name\\
-        University Name\\
-        Country\\
-        Date
+        \normalsize Last compiled: \today\ \currenttime
              
     \end{center}
  \end{titlepage}
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{1}
 \tableofcontents
 \linenumbers
 \newpage
